@@ -1,0 +1,104 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#map, #classifyer {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#classifyer {
+    flex-direction: column;
+    width: 100%;
+}
+
+#p5-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.icon {
+    width: 150px; 
+    height: 150px; 
+}
+
+#buttons {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/* button css style from https://getcssscan.com/css-buttons-examples */
+.buttoncss {
+    flex: 0.8;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 0 10px;
+}
+
+.buttoncss:focus {
+    color: #171e29;
+}
+
+.buttoncss:hover {
+    border-color: rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+    fill: rgb(0, 255, 0);
+}
+
+.buttoncss:active {
+    border-color: rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+    fill: rgb(0, 255, 0);
+}
+
+@media (min-width: 768px) {
+    .buttoncss {
+        min-width: 170px;
+    }
+}
